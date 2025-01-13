@@ -1,0 +1,16 @@
+body{
+      background-color: rgb(148, 141, 141);
+}
+
+.btn{
+      background-color: blue;
+      font-size: 18px;
+      font-weight: 600px;
+      padding: 10px 32px;
+      border: none;
+      border-radius: 12px;
+      color: white;
+}
+.btn:hover{
+      background-color: rgb(243, 6, 219);
+}
