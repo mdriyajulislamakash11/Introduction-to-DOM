@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tour of DOM</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- 25-1 What is dom, Connect your JS file with html file -->
 
-    <h1>hello world!</h1>
-    <h1>hello world!</h1>
+    <h1 class="class">hello world!</h1>
+    <h1 class="class">hello world!</h1>
     <h1>hello world!</h1>
     <h1>hello world!</h1>
     <h3 id="hii">hello bangladesh</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet iste libero amet animi ipsa, inventore aut tenetur officia architecto, nesciunt et aspernatur dolorem recusandae? Eaque labore voluptate sapiente optio!</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+      eveniet iste libero amet animi ipsa, inventore aut tenetur officia
+      architecto, nesciunt et aspernatur dolorem recusandae? Eaque labore
+      voluptate sapiente optio!
+    </p>
     <button class="btn">done</button>
 
     <ul>
-      <li>age khaeaw </li>
+      <li>age khaeaw</li>
       <li>pore uta poro</li>
       <li>ehon barir dike hato</li>
       <li>danew takaba na</li>
@@ -28,10 +33,23 @@
 
     <!-- <script src="main.js"></script> -->
     <script>
-            // for(const i of number){
-            //       console.log(i.innerText.toUpperCase())
-            // }
+      // inner text changes by javascript
+      const id = document.getElementById("hii");
+      id.innerText = "hello";
 
+      // tagName use
+      const TagName = document.getElementsByTagName('h1')
+      for(let i of TagName){
+            console.log(i.innerText)
+
+      }
+
+      // claaName use
+      const classh = document.getElementsByClassName("class");
+      console.log(classh[1].innerText)
+
+      // quarySelectorAll
+       
     </script>
   </body>
 </html>
